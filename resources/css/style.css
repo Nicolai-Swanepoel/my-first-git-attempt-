@@ -1,0 +1,280 @@
+/* -------------------------------------------------------- */
+/* BASIC SETUP */
+/* -------------------------------------------------------- */
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* -------- HEADINGS -------- */
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 10%;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+h1:hover {
+    color: orangered;
+    font-size: 300%;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+}
+
+/* -------- PARAGRAPHS -------- */
+
+p {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+/* -------- HEADER -------- */
+
+header {
+    background: linear-gradient(90deg, rgba(255, 140, 0, 0.459) 4%, rgba(196, 209, 8, 0.616) 53%, rgba(255, 132, 0, 0.692) 100%), url(img/sunset1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-heading {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.navigation li {
+    display: inline-block;
+    padding-left: .5rem;
+    letter-spacing: 1px;
+}
+
+.navigation li a {
+    display: inline-block;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #555;
+}
+
+.navigation li a:link,
+.navigation li a:visited,
+.navigation li a:active, {
+    display: inline-block;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    display: inline-block;
+    letter-spacing: 1px;
+    border-bottom: 2px solid orangered;
+    text-align: center;
+}
+
+/* -------- CONTACT MODAL -------- */
+
+.modal {
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal__content {
+    width: 75%;
+    height: 65%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    border-radius: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+/* modal functionality */
+#modal:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modal:target .modal__content {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.modal__close {
+    color: #363636;
+    font-size: 2em;
+    position: absolute;
+    top: .5em;
+    right: 1em;
+}
+
+.modal__heading {
+    color:dodgerblue;
+    margin-bottom: 1em;
+}
+
+.modal__paragraph {
+    line-height: 1.5em;
+}
+
+
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+/* -------- HEADER ICONS -------- */
+
+.icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.icon-git, .icon-linkedin {
+    padding-top: 3rem;
+    font-size: 350%;
+    text-decoration: none;
+    color: #333;
+}
+
+.icon-linkedin { color: #007bb5; }
+
+.icon:link,
+.icon:visited,
+.icon:active { text-decoration: none; }
+
+/* -------- SHOWCASE -------- */
+
+.showcase {
+    background: rgb(255,141,0);
+    background: radial-gradient(circle, rgba(255, 140, 0, 0.712) 4%, rgba(246, 255, 0, 0.719) 53%, rgba(255, 132, 0, 0.705) 100%)
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+}
+
+.showcase h3 {
+    padding-top: 3rem;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+}
+
+.projects {
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    margin: 0 auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    grid-gap: 3rem;
+}
+
+.item-desc {
+    border: 1px solid #333;
+    padding: 5rem;
+    max-width: 38rem;
+}
+
+.item-desc img {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.item-desc p {
+    display: block;
+    text-align: center;
+    height: auto;
+    padding-top: 1rem;
+    margin: 0 auto;
+}
+
+/* -------- FOOTER -------- */
+
+/* -------- ANIMATIONS -------- */
+
+/* -------- typewriter h4 -------- */
+.typewriter h4 {
+    overflow: hidden;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    font-size: 120%;
+    color: rgb(78, 78, 78);
+    letter-spacing: .15em; 
+    animation: 
+      typing 1s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+.typewriter h4:hover {
+    color: orangered;
+}

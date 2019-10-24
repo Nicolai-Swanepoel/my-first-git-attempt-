@@ -6,7 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
         <link rel="stylesheet" href="resources/css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         <title>Nicolai Swanepoel - Portfolio</title>
     </head>
     <body>
@@ -17,28 +18,59 @@
                 <ul class="navigation">
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#modal" class="modal-open">Contact</a></li>
+                    <div class="modal" id="modal">
+                        <div class="modal__content">
+                            <a href="#" class="modal__close">&times;</a>
+                            <h2 class="modal__heading">My Contact Details</h2>
+                            <p class="modal__paragraph">email</p>
+                        </div>
+                    </div>  
                 </ul>
             </nav>
             <div class="hero-heading">
                 <h1>Nicolai Swanepoel</h1>
                 <br>
-                <h2>Front-End Developer</h2>
-                <div class="typewriter">
+                <h2 class="heading-title">Front-End Developer</h2>
+            <div class="typewriter">
                 <h4><tt>[welcome to my website]</tt></h4>
-                </div>
+            </div>
+            <div class="icons">
+                <a href="https://github.com/Nicolai-Swanepoel" class="icon-git"><i class="icon ion-logo-github"></i></a>
+                <a href="#" class="icon-linkedin"><i class="icon ion-logo-linkedin"></i></a>
+            </div>
             </div>
         </header>
         <section class="showcase">
+        <div class="projects-grid">
             <h3>My Projects</h3>
             <div class="projects">
-                <div class="item1">item1</div>
-                <div class="item2">item2</div>
-                <div class="item3">item3</div>
+                <div class="item1">
+                    <div class="item-desc">
+                        <a href="http://www.shipsman.com.na"><img src="resources/img/project-shipsman.com.jpg" alt="shipsman.com"></a>
+                        <p class="project-title">Ships Management Services</p>
+                        <p class="project-desc">This project was completed for Ships Management Services of Walvis-Bay, utilizing the WordPress CMS platform. This was my first experience using WordPress to build a project. </p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="item-desc">
+                        <a href="#"><img src="resources/img/project-shipsman.com.jpg" alt=""></a>
+                        <p class="project-title">Omega Travel & Leisure</p>
+                        <p class="project-desc">This project was completed for ships management services of Walvis-Bay, utilizing the WordPress CMS platform. This was my first experience using WordPress to build a project. </p>
+                    </div>
+                </div>
+                <div class="item3">
+                    <div class="item-desc">
+                        <a href="#"><img src="resources/img/project-shipsman.com.jpg" alt=""></a>
+                        <p class="project-title">Omega Travel & Leisure</p>
+                        <p class="project-desc">This project was completed for ships management services of Walvis-Bay, utilizing the WordPress CMS platform. This was my first experience using WordPress to build a project. </p>
+                    </div>
+                </div>
             </div>
+        </div>
         </section>
         <footer class="footer">
-            Footer
+            <p class="footerp">&copy;opyright Nicolai Swanepoel 2019. All Rights</p>
         </footer>
     </body>
 </html>

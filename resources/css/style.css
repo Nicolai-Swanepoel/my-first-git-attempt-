@@ -228,71 +228,23 @@ a:visited {
 .icon:visited,
 .icon:active { text-decoration: none; }
 
+.icon-link {
+    text-decoration: none;
+    color: rgb(206, 26, 26);
+}
+
 /* -------- SHOWCASE -------- */
 
-.showcase {
-    background-color: #f3f3f3;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 80vh;
-}
 
-.showcase h3 {
-    padding-top: 3rem;
-    font-size: 200%;
-    display: flex;
-    justify-content: center;
-}
-
-.projects {
-    padding-top: 5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
-    margin: 0 auto;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    grid-gap: 3rem;
-}
-
-.item-desc {
-    border: 1px solid #333;
-    padding: 1rem;
-    max-width: 38rem;
-}
-
-.item-desc img {
-    display: block;
-    text-align: center;
+.box img {
     width: 100%;
     height: auto;
-    margin: 0 auto;
+    margin-bottom: 15px;
 }
 
-.project-title {
-    display: block;
-    text-align: center;
-    height: auto;
-    padding-top: 1rem;
-    margin: 0 auto;
-    text-decoration: underline;
-    color: #992900;
+.city-feature {
+    margin-bottom: 5px;
 }
-
-.project-desc {
-    display: block;
-    text-align: center;
-    height: auto;
-    padding-top: 1rem;
-    margin: 0 auto;
-    color: #333;
-}
-
-
-
-
 
 /* -------- FOOTER -------- */
 
@@ -304,11 +256,11 @@ a:visited {
 }
 
 .footerp {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
     color: #fff;
+    font-size: 100%;
+    margin-top: 30px;
 }
 
 /* -------- VENDOR ANIMATIONS -------- */
@@ -335,4 +287,21 @@ a:visited {
   
 .typewriter h4:hover {
     color: orangered;
+}
+
+/* -------------------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* -------------------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
 }
